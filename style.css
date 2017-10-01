@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "Quicksand-Light";
+  src: url("fonts/Quicksand-Light.ttf");
+}
+.block {
+    width: 600px;
+    height: 600px;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: row;
+}
+html,body {
+    background: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+.container {
+    background: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 1500px;
+    height: 600px;
+
+}
+.hover {
+    height: 40px;
+    width: 40px;
+    background: black;
+    transition: 0.1s;
+}
+.hover:hover{
+    background: lightpink;
+}
+.block_left {
+    height: 600px;
+    width: 600px;
+}
+.hover_fun:hover {
+    background: lightblue;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Quicksand-Light";
+  font-size: 50px;
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  border: 2px solid white;
+  transition: 2s;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+.title.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: lightgrey;
+  font-family: "Quicksand-Light";
+  font-size: 50px;
+  height: 400px;
+  width: 400px;
+  border-radius: 100%;
+  border: 2px solid lightgrey;
+  /*transition: 4s;*/
+  cursor: pointer;
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-iteration-count:infinite;
+  border: 2px solid black;
+  background-color: lightgrey;
+  opacity: 0.3;
+  color: black;
+}
+/*.title:hover {
+    border: 2px solid black;
+
+}*/
+@keyframes rotate {
+
+    from{transform: rotate(-10deg) }
+    50% {transform: rotate(10deg)}
+    100% {transform: rotate(-10deg)}
+    to {transform: rotate(-10deg)}
+
+}
