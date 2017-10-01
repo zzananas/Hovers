@@ -30,11 +30,13 @@ html,body {
 .hover {
     height: 40px;
     width: 40px;
-    background: black;
+    background: white;
+    opacity: 0.1;
     transition: 0.1s;
 }
 .hover:hover{
     background: lightpink;
+    opacity: 1;
 }
 .block_left {
     height: 600px;
@@ -42,6 +44,7 @@ html,body {
 }
 .hover_fun:hover {
     background: lightblue;
+    opacity: 1;
 }
 .title {
   display: flex;
