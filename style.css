@@ -60,6 +60,8 @@ html,body {
   transition: 2s;
   cursor: pointer;
   text-decoration: none;
+  text-align: center;
+  
 
 }
 .title.active {
@@ -69,8 +71,8 @@ html,body {
   color: lightgrey;
   font-family: "Quicksand-Light";
   font-size: 50px;
-  height: 400px;
-  width: 400px;
+  /* height: 400px;
+  width: 400px; */
   border-radius: 100%;
   border: 2px solid lightgrey;
   /*transition: 4s;*/
@@ -83,10 +85,10 @@ html,body {
   opacity: 0.3;
   color: black;
 }
-/*.title:hover {
+.title:hover {
     border: 2px solid black;
 
-}*/
+}
 @keyframes rotate {
 
     from{transform: rotate(-10deg) }
