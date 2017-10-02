@@ -279,21 +279,22 @@
                         <script>
                         
                            $(document).ready(function() {
-                               var $hover_sound = document.createElement("audio");
-                               $hover_sound.src="other-music-loops-rob-118-a-modloop-short-042.mp3";
-                               $hover_sound.src="TechBassR120E-01.mp3";
-                               $hover_sound.volume=0.10;
-                               $hover_sound.autoPlay=false;
-                               $hover_sound.preLoad=true;       
+                               var hover_sound = document.createElement("audio");
+                               hover_sound.src="other-music-loops-rob-118-a-modloop-short-042.mp3";
+                        //        hover_sound.src="TechBassR120E-01.mp3";
+                               hover_sound.volume=0.10;
+                               hover_sound.autoPlay=false;
+                               hover_sound.preLoad=true;       
                         
                         //        $(".block_left > *").mouseover(function() {
                         //            $hover_sound.play();
                         //        });
                                $(".hover").mouseenter(function() {
-                                $hover_sound.play();
+                                hover_sound.currentTime = 0;
+                                hover_sound.play();
                                 });
                                 $(".hover").mouseout(function() {
-                                $hover_sound.pause();
+                                hover_sound.pause();
                                 });
                            });
                         
